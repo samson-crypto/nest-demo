@@ -2,6 +2,8 @@
 
 ## Description
 
+Please use watch mode spin up the service, to view the Swagger docs, here is the link: http://localhost:3000/docs/
+
 ## Installation
 
 ```bash

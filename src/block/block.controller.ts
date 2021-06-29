@@ -15,8 +15,8 @@ export class BlockController {
   )
   async findOne(
     @Param('id') id: string,
-    @User('userUuid') userId: string,
+    // @User('userUuid') userId: string,
   ) {
-    return BlockService.findOne(id, userId);
+    return BlockService.findOne(id, 'test user');
   }
 }
