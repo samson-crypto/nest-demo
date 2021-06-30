@@ -1,7 +1,8 @@
-import { Block, BlockCommittedCouncilNode } from "./block.entity";
+import { Block, BlockCommittedCouncilNode } from './block.entity';
 
 export class BlockService {
-  static async findOne(id: string, userId: string) {
+  static async findOne(id: string) {
+    console.log(id);
     const dbResult = new Block();
     dbResult.height = 1294032;
     dbResult.blockHash = 'EFDE5E7504B733A720D6D41A87B23A9D319FB59B4EC69A6E57889E6EEA30BECA';

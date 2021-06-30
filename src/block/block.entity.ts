@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 import { IsArray, IsBoolean, IsInt, IsNumber, IsString } from 'class-validator';
 
-import { ApiFieldDocValidate } from 'src/decorators/api-response.decorators';
+import { ApiFieldDocValidate } from 'src/decorators/api-response.decorator';
 
 
 export class BlockCommittedCouncilNode {

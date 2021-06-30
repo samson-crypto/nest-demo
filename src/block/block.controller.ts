@@ -1,8 +1,7 @@
 import { Param } from '@nestjs/common';
 
-import { ApiAllInOne, HTTPMethod } from 'src/decorators/api-response.decorators';
-import { ApiDocAndRoute } from 'src/decorators/common.decorators';
-import { User } from 'src/decorators/user.decorator';
+import { ApiAllInOne, HTTPMethod } from 'src/decorators/api-response.decorator';
+import { ApiDocAndRoute } from 'src/decorators/common.decorator';
 import { Block } from './block.entity';
 import { BlockService } from './block.service';
 
@@ -17,6 +16,6 @@ export class BlockController {
     @Param('id') id: string,
     // @User('userUuid') userId: string,
   ) {
-    return BlockService.findOne(id, 'test user');
+    return BlockService.findOne(id);
   }
 }

@@ -7,7 +7,7 @@ import {
 import { ApiExtraModels, ApiOperation, ApiProperty, ApiResponse, ApiResponseOptions, getSchemaPath } from '@nestjs/swagger';
 import { IsOptional } from 'class-validator';
 
-import { PaginationRespDTO } from 'src/dto/base.dto';
+import { PaginationRespDTO } from 'src/libs/base-objects';
 import { AuthGuard } from 'src/guards/auth.guard';
 
 export enum HTTPMethod {
