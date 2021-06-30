@@ -17,20 +17,10 @@ Please use watch mode spin up the service, to view the Swagger docs, here is the
 │   ├── configs # configurations of the project
 │   ├── decorators # nest decorators (https://docs.nestjs.com/openapi/decorators)
 │   ├── filters # nest filters (https://docs.nestjs.com/microservices/exception-filters)
-│   ├── guards
-│   │   └── auth.guard.ts
-│   ├── libs
-│   │   ├── base-objects.ts
-│   │   └── logger.ts
-│   ├── main.ts
-│   └── middlewares
-│       └── logger.middleware.ts
-├── test
-│   ├── app.e2e-spec.ts
-│   ├── helpers
-│   │   ├── common.ts
-│   │   └── load-sandbox.ts
-│   └── jest-e2e.json
+│   ├── guards # nest guards (https://docs.nestjs.com/microservices/guards)
+│   ├── libs # common libraries (ideally, they should be separated npm packages)
+│   └── middlewares # nest middlewares (https://docs.nestjs.com/middleware)
+├── test # test codes
 ├── Dockerfile
 ├── README.md
 ├── makefile
