@@ -1,6 +1,6 @@
 import { Controller, Get } from '@nestjs/common';
 import { AppService } from './app.service';
-import { BlockController } from './block/block.controller';
+import { BlockController } from './domains/block/block.controller';
 
 @Controller()
 export class AppController {
